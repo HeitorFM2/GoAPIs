@@ -1,0 +1,10 @@
+package models
+
+import "gorm.io/gorm"
+
+type Users struct {
+	gorm.Model
+	First_name string `json:"first_name"`
+	Last_name  string `json:"last_name"`
+	Email      string `json:"email"`
+}
